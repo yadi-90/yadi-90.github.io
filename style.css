@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background: linear-gradient(90deg, #004aad, black);
+  background-size: 400% 400%;
+  animation: anim 2.5s infinite ease-in-out;
+}
+@keyframes anim {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+header {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  padding: 15px;
+  border: 2px solid white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  gap: 72px;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  transition: 0.5s;
+}
+ul:hover {
+  border: 4px solid #f5bb0a;
+}
+ul:hover li a {
+  color: #f5bb0a;
+  animation: "glowing" ease-in-out infinite alternate;
+}
+ul:hover li a:not(:hover) {
+  color: white;
+  opacity: 0.3s;
+  filter: blur(1px);
+}
+main {
+  align-content: space-between;
+}
+.headerwrapped {
+  font-size: 60px;
+  color: aliceblue;
+  text-align: center;
+  font-family: "Cedarville Cursive", cursive;
+  font-family: "Dancing Script", cursive;
+  font-family: "Style Script", cursive;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.marginp {
+  margin-top: 10%;
+}
+.marginabout {
+  margin-top: 10%;
+}
+.flex-items {
+  flex: 50%;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: wrap;
+}
+.introparagraph {
+  font-size: 30px;
+  color: #f5bb0a;
+}
+.profile-image {
+  width: 80%;
+  height: 90%;
+  border-color: black;
+}
+.ensenadaimg {
+  width: 500px;
+  height: 500px;
+}
+.flex-container-about {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.flex-items-about {
+  flex: 40%;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: wrap;
+  font-size: 35px;
+  color: #f5bb0a;
+  align-items: stretch;
+}
+.flex-container-projects {
+  justify-content: space-around;
+  align-items: row;
+  flex-direction: row;
+  display: flex;
+}
+.bench {
+  width: 500px;
+  height: 500px;
+}
+.contactform {
+  display: flex;
+  margin-left: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vh;
+}
+.padding {
+  padding: 10px;
+}
+.formstyle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: White;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  height: 400px;
+  background-color: #004aad;
+  border-radius: 20px;
+  box-shadow: 10px 15px 25px black;
+}
+#name,
+#email {
+  width: 60%;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  outline: black;
+  background-color: gray;
+  color: white;
+}
+#name::placeholder,
+#email::placeholder {
+  color: white;
+}
+#textBox {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+  background-color: gray;
+  color: white;
+}
+#textBox::placeholder {
+  color: white;
+}
+input[type="submit"] {
+  height: 40px;
+  width: 140px;
+  border: none;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  background-color: #f5bb0a;
+}
+.Title {
+  text-align: center;
+  color: #f5bb0a;
+  font-size: 80px;
+  font-family: "Cedarville Cursive", cursive;
+}
+.aboutme {
+  color: #f5bb0a;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+.project {
+  color: #f5bb0a;
+}
+.companies {
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.devicon-linkedin-plain-wordmark {
+  font-size: 90px;
+  color: white;
+  text-decoration: none;
+}
+.footer {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  color: #f5bb0a;
+}
